@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atharv Shopping Mall Online Delivery</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/utility.css" />
+    <link rel="stylesheet" href="/css/responsivness.css" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    @media screen and (max-width : 800px) {
+
+        header {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 18vh;
+        }
+    }
+
+    @media screen and (max-width:1530px) {
+
+        .card,
+        #card2 {
+            overflow: scroll;
+        }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+    .text-center {
+        text-align: center;
+    }
+
+    #logo {
+        display: flex;
+        align-content: center;
+    }
+
+    header img {
+        /* width: 244px; */
+        margin: 18px 11px -1px 19px;
+        height: min-content;
+    }
+
+    header {
+        display: flex;
+        /* justify-content: center; */
+        align-content: center;
+        box-sizing: border-box;
+        height: 50px;
+    }
+
+    footer {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        font-size: 21px;
+        letter-spacing: 0.087em;
+        height: 5vh;
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    header,
+    footer {
+        display: flex;
+        background-color: #00c1e1;
+        color: aliceblue;
+        font-family: 'Train One', cursive;
+        font-weight: bold;
+
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 0 23px;
+        list-style: none;
+    }
+
+    nav ul li a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .content {
+        /* background-color: lightgreen; */
+        min-height: calc(100vh - 50px - 5vh);
+    }
+
+    #searchbar {
+        display: flex;
+        align-items: center;
+    }
+
+    #searchbart {
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .btn {
+        width: 63px;
+        height: fit-content;
+        margin: 2px 0px 0px 10px;
+        border: 2px solid #01ffb8;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        border: 3px solid black;
+        font-weight: 900;
+    }
+
+    .slider {
+        margin: 20px auto;
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    .card {
+        max-height: 286px;
+        max-width: 88vw;
+        margin: 15px auto;
+        background-color: aquamarine;
+    }
+
+    img {
+        box-sizing: border-box;
+    }
+
+    .Imagesection {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 54px;
+        margin: 0px 7px;
+    }
+
+    h2 {
+        text-align: start;
+        font-size: 47px;
+        margin-bottom: 15px;
+        margin-left: 30px;
+        text-transform: capitalize;
+    }
+
+    .imageshover {
+        padding: 5px;
+        max-height: 160px;
+        height: 156px;
+    }
+
+    .imageshover:hover {
+        border: 2px solid black;
+        cursor: pointer;
+        padding: 3px;
+    }
+
+    .slider img {
+        height: 500px;
+        width: 1600px;
+        overflow: hidden;
+    }
+
+    nav ul {
+        text-transform: capitalize;
+    }
+
+    #kartimage {
+        width: 25px;
+        margin: 10px 35px 10px 35px;
+    }
+
+    .imageflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lines {
+        display: grid;
+        justify-items: center;
+    }
+
+    #card2 {
+        background-color: rgb(13, 236, 161);
+        max-height: 286px;
+        max-width: 88vw;
+        margin: 15px auto auto auto;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="/image/logo.png" alt="image" width="100px
+            " />
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/html/Home.html">home</a></li>
+                <li><a href="/html/About.html">about</a></li>
+                <li><a href="/html/Contact.html">contact</a></li>
+                <li><a href="pro"></a></li>
+            </ul>
+        </nav>
+        <div id="searchbar">
+            <input type="text" name="" id="searchbart" style="width: 30vw; height: 26px" placeholder="Search Items" />
+            <button class="btn">Search</button>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="slider">
+                <img src="/image/mall.jpg" alt="img" />
+            </div>
+
+            <div class="card">
+                <h2>Shop now</h2>
+                <div class="Imagesection">
+                    <div class="imageflex">
+                        <a href="https://www.amazon.in/gp/browse.html?node=2454178031&ref_=nav_em_sbc_bhg_gourmet_all_0_2_13_12"
+                            target="_blank"><img src="/image/Grocery.webp" alt="img" class="imageshover" /></a>
+                        <div class="lines">
+                            <p>Grocery</p>
+                            <p>Upto 75% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="imageflex">
+                        <a href="https://www.flipkart.com/bgm-big-billion-days-sale-store?fm=neo%2Fmerchandising&iid=M_63dfde4e-ff8c-4b40-a42f-abecd4c7ddf2_1_LFZDN752UAJV_MC.FASV00V1AKV7&otracker=hp_rich_navigation_5_1.navigationCard.RICH_NAVIGATION_Beauty_FASV00V1AKV7&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_5_L0_view-all&cid=FASV00V1AKV7"
+                            target="_blank">
+                            <img src="/image/beauty.webp" alt="img" class="imageshover" /></a>
+                        <div class="lines">
+                            <p>Beauty</p>
+                            <p>Upto 65% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="imageflex">
+                        <a href="https://www.amazon.in/s?k=books&ref=nb_sb_noss" target="_blank">
+                            <img src="/image/books.jpg" alt="img" class="imageshover" /></a>
+                        <div class="lines">
+                            <p>Books</p>
+                            <p>Upto 30% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="fourthimage">
+                        <a href="https://www.flipkart.com/lifestyle-big-billion-days-store?fm=neo%2Fmerchandising&iid=M_5dde876e-10d8-49b4-9f51-5243d03a2ce9_1_LFZDN752UAJV_MC.MAGMJ6L3VQ88&otracker=hp_rich_navigation_3_1.navigationCard.RICH_NAVIGATION_Fashion_MAGMJ6L3VQ88&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L0_view-all&cid=MAGMJ6L3VQ88"
+                            target="_blank">
+                            <img src="/image/clothes.jpg" alt="img" class="imageshover" /></a>
+
+                        <div class="lines">
+                            <p>Clothes and Fashion</p>
+                            <p>Upto 30% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="imageflex">
+                        <a href="https://www.flipkart.com/electronics-big-billion-days-store?fm=neo%2Fmerchandising&iid=M_5dde876e-10d8-49b4-9f51-5243d03a2ce9_1_LFZDN752UAJV_MC.8TVKUWT87M16&otracker=hp_rich_navigation_4_1.navigationCard.RICH_NAVIGATION_Electronics_8TVKUWT87M16&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_4_L0_view-all&cid=8TVKUWT87M16"
+                            target="_blank">
+                            <img src="/image/electronics.jpg" alt="img" class="imageshover" style="width: 280px" /></a>
+                        <div class="lines">
+                            <p>Electronics</p>
+                            <p>Upto 75% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card2">
+                <h2>Shop now</h2>
+                <div class="Imagesection">
+                    <div class="imageflex">
+                        <a href="https://www.amazon.in/gp/browse.html?node=2454178031&ref_=nav_em_sbc_bhg_gourmet_all_0_2_13_12"
+                            target="_blank"><img src="/image/Grocery.webp" alt="img" class="imageshover" /></a>
+                        <div class="lines">
+                            <p>Grocery</p>
+                            <p>Upto 75% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="imageflex">
+                        <a href="https://www.flipkart.com/bgm-big-billion-days-sale-store?fm=neo%2Fmerchandising&iid=M_63dfde4e-ff8c-4b40-a42f-abecd4c7ddf2_1_LFZDN752UAJV_MC.FASV00V1AKV7&otracker=hp_rich_navigation_5_1.navigationCard.RICH_NAVIGATION_Beauty_FASV00V1AKV7&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_5_L0_view-all&cid=FASV00V1AKV7"
+                            target="_blank">
+                            <img src="/image/beauty.webp" alt="img" class="imageshover" /></a>
+                        <div class="lines">
+                            <p>Beauty</p>
+                            <p>Upto 65% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="imageflex">
+                        <a href="https://www.amazon.in/s?k=books&ref=nb_sb_noss" target="_blank">
+                            <img src="/image/books.jpg" alt="img" class="imageshover" /></a>
+                        <div class="lines">
+                            <p>Books</p>
+                            <p>Upto 30% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="fourthimage">
+                        <a href="https://www.flipkart.com/lifestyle-big-billion-days-store?fm=neo%2Fmerchandising&iid=M_5dde876e-10d8-49b4-9f51-5243d03a2ce9_1_LFZDN752UAJV_MC.MAGMJ6L3VQ88&otracker=hp_rich_navigation_3_1.navigationCard.RICH_NAVIGATION_Fashion_MAGMJ6L3VQ88&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L0_view-all&cid=MAGMJ6L3VQ88"
+                            target="_blank">
+                            <img src="/image/clothes.jpg" alt="img" class="imageshover" /></a>
+
+                        <div class="lines">
+                            <p>Clothes and Fashion</p>
+                            <p>Upto 30% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="imageflex">
+                        <a href="https://www.flipkart.com/electronics-big-billion-days-store?fm=neo%2Fmerchandising&iid=M_5dde876e-10d8-49b4-9f51-5243d03a2ce9_1_LFZDN752UAJV_MC.8TVKUWT87M16&otracker=hp_rich_navigation_4_1.navigationCard.RICH_NAVIGATION_Electronics_8TVKUWT87M16&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_4_L0_view-all&cid=8TVKUWT87M16"
+                            target="_blank">
+                            <img src="/image/electronics.jpg" alt="img" class="imageshover" style="width: 280px" /></a>
+                        <div class="lines">
+                            <p>Electronics</p>
+                            <p>Upto 75% off</p>
+                            <p>Grab The Deal Now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card"">
+                    <h2>Shop now</h2>
+                    <div class=" Imagesection">
+                <div class="imageflex">
+                    <a href="https://www.amazon.in/gp/browse.html?node=2454178031&ref_=nav_em_sbc_bhg_gourmet_all_0_2_13_12"
+                        target="_blank"><img src="/image/Grocery.webp" alt="img" class="imageshover" /></a>
+                    <div class="lines">
+                        <p>Grocery</p>
+                        <p>Upto 75% off</p>
+                        <p>Grab The Deal Now!</p>
+                    </div>
+                </div>
+
+                <div class="imageflex">
+                    <a href="https://www.flipkart.com/bgm-big-billion-days-sale-store?fm=neo%2Fmerchandising&iid=M_63dfde4e-ff8c-4b40-a42f-abecd4c7ddf2_1_LFZDN752UAJV_MC.FASV00V1AKV7&otracker=hp_rich_navigation_5_1.navigationCard.RICH_NAVIGATION_Beauty_FASV00V1AKV7&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_5_L0_view-all&cid=FASV00V1AKV7"
+                        target="_blank">
+                        <img src="/image/beauty.webp" alt="img" class="imageshover" /></a>
+                    <div class="lines">
+                        <p>Beauty</p>
+                        <p>Upto 65% off</p>
+                        <p>Grab The Deal Now!</p>
+                    </div>
+                </div>
+
+                <div class="imageflex">
+                    <a href="https://www.amazon.in/s?k=books&ref=nb_sb_noss" target="_blank">
+                        <img src="/image/books.jpg" alt="img" class="imageshover" /></a>
+                    <div class="lines">
+                        <p>Books</p>
+                        <p>Upto 30% off</p>
+                        <p>Grab The Deal Now!</p>
+                    </div>
+                </div>
+
+                <div class="fourthimage">
+                    <a href="https://www.flipkart.com/lifestyle-big-billion-days-store?fm=neo%2Fmerchandising&iid=M_5dde876e-10d8-49b4-9f51-5243d03a2ce9_1_LFZDN752UAJV_MC.MAGMJ6L3VQ88&otracker=hp_rich_navigation_3_1.navigationCard.RICH_NAVIGATION_Fashion_MAGMJ6L3VQ88&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L0_view-all&cid=MAGMJ6L3VQ88"
+                        target="_blank">
+                        <img src="/image/clothes.jpg" alt="img" class="imageshover" /></a>
+
+                    <div class="lines">
+                        <p>Clothes and Fashion</p>
+                        <p>Upto 30% off</p>
+                        <p>Grab The Deal Now!</p>
+                    </div>
+                </div>
+
+                <div class="imageflex">
+                    <a href="https://www.flipkart.com/electronics-big-billion-days-store?fm=neo%2Fmerchandising&iid=M_5dde876e-10d8-49b4-9f51-5243d03a2ce9_1_LFZDN752UAJV_MC.8TVKUWT87M16&otracker=hp_rich_navigation_4_1.navigationCard.RICH_NAVIGATION_Electronics_8TVKUWT87M16&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_4_L0_view-all&cid=8TVKUWT87M16"
+                        target="_blank">
+                        <img src="/image/electronics.jpg" alt="img" class="imageshover" style="width: 280px" /></a>
+                    <div class="lines">
+                        <p>Electronics</p>
+                        <p>Upto 75% off</p>
+                        <p>Grab The Deal Now!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <p>Copyright reserved &copy; AtharvSankpal&trade;</p>
+    </footer>
+</body>
+
+</html>
